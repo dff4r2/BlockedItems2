@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "blockeditems",
+  "version": "${version}",
+  "name": "Blocked Items",
+  "description": "Pick items you never want in your inventory. Press B while holding an item to block it.",
+  "icon": "assets/blockeditems/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.blockeditems.BlockedItemsMod"],
+    "modmenu": ["com.blockeditems.ModMenuIntegration"]
+  },
+  "mixins": ["blockeditems.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "cloth-config": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
